@@ -1,0 +1,42 @@
+{
+  "name": "web-programming",
+  "version": "0.0.0",
+  "description": "Hands-on introduction to web programming",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ucudal-wp/web-programming.git"
+  },
+  "author": "Matias Olivera <javier.olivera@ucu.edu.uy>",
+  "contributors": [
+    "Matias Olivera <javier.olivera@ucu.edu.uy>",
+    "Rodrigo Espinosa"
+  ],
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "@ucudal/eslint-config": "^0.1.0",
+    "eslint": "^5.3.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "husky": "^1.0.0-rc.13",
+    "jest": "^23.5.0",
+    "prettier": "^1.14.2",
+    "pretty-quick": "^1.6.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/ucudal-wp/web-programming/issues"
+  },
+  "homepage": "https://github.com/ucudal-wp/web-programming#readme",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "jest"
+  }
+}
